@@ -1,0 +1,1 @@
+<h1>La classe <?= $classe ?> n'existe pas </h1>

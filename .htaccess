@@ -1,0 +1,9 @@
+# we enable the engine 
+RewriteEngine on
+
+#accept loading of actual files  and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# we Rewrite rule 
+RewriteRule ^(.*)$ public/index.php?url=$1 [L,QSA]
